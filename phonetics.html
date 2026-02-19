@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фонетика и написание — РусЯзык</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">Р</div>
+                <div class="logo-text">Рус<span>Язык</span></div>
+            </a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-home">← К темам</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>🔊 Фонетика и написание</h1>
+            <p>Звуки, буквы, ударение, орфоэпические нормы</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="rules">📖 Правила</button>
+            <button class="tab-btn" data-tab="quiz">✍️ Тест</button>
+        </div>
+
+        <div class="tab-content active" id="tab-rules">
+            <div class="rules-container">
+                <div class="rule-block open">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">1</span> Звуки и буквы</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>В русском языке <strong>33 буквы</strong> и <strong>42 звука</strong>.</p>
+                            <table class="rule-table">
+                                <tr><th></th><th>Количество</th><th>Примеры</th></tr>
+                                <tr><td>Гласных букв</td><td>10</td><td>а, о, у, э, ы, и, е, ё, ю, я</td></tr>
+                                <tr><td>Гласных звуков</td><td>6</td><td>[а], [о], [у], [э], [ы], [и]</td></tr>
+                                <tr><td>Согласных букв</td><td>21</td><td>б, в, г, д, ж, з, и др.</td></tr>
+                                <tr><td>Согласных звуков</td><td>36</td><td>твёрдые и мягкие пары</td></tr>
+                            </table>
+                            <div class="rule-note">⚠️ Буквы <strong>е, ё, ю, я</strong> могут обозначать 2 звука: в начале слова, после гласных, после ъ и ь.</div>
+                            <div class="rule-example">
+                                <strong>яма</strong> = [й'ама] — 3 буквы, 4 звука<br>
+                                <strong>мяч</strong> = [м'ач'] — 3 буквы, 3 звука
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">2</span> Ударение (орфоэпия)</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>Запомните правильное ударение в словах:</p>
+                            <table class="rule-table">
+                                <tr><th>Правильно ✓</th><th>Неправильно ✗</th></tr>
+                                <tr><td>звон<strong>И́</strong>т</td><td>зв<strong>О́</strong>нит</td></tr>
+                                <tr><td>тв<strong>О́</strong>рог / твор<strong>О́</strong>г</td><td>—</td></tr>
+                                <tr><td>катал<strong>О́</strong>г</td><td>кат<strong>А́</strong>лог</td></tr>
+                                <tr><td>торт<strong>Ы́</strong></td><td>т<strong>О́</strong>рты</td></tr>
+                                <tr><td>т<strong>О́</strong>рты</td><td>торт<strong>Ы́</strong></td></tr>
+                                <tr><td>бал<strong>О́</strong>ванный</td><td>б<strong>А́</strong>лованный</td></tr>
+                                <tr><td>кварт<strong>А́</strong>л</td><td>кв<strong>А́</strong>ртал</td></tr>
+                                <tr><td>щав<strong>Е́</strong>ль</td><td>щ<strong>А́</strong>вель</td></tr>
+                                <tr><td>свёкл<strong>А́</strong></td><td>св<strong>Ё́</strong>кла</td></tr>
+                                <tr><td>св<strong>Ё</strong>кла</td><td>свекл<strong>А́</strong></td></tr>
+                            </table>
+                            <div class="rule-note">⚠️ В строке «тОрты» — ударение на первый слог! В строке «свЁкла» — тоже на первый.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">3</span> Звонкие и глухие согласные</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <table class="rule-table">
+                                <tr><th>Звонкие</th><th>Глухие</th></tr>
+                                <tr><td>[б] [б']</td><td>[п] [п']</td></tr>
+                                <tr><td>[в] [в']</td><td>[ф] [ф']</td></tr>
+                                <tr><td>[г] [г']</td><td>[к] [к']</td></tr>
+                                <tr><td>[д] [д']</td><td>[т] [т']</td></tr>
+                                <tr><td>[ж]</td><td>[ш]</td></tr>
+                                <tr><td>[з] [з']</td><td>[с] [с']</td></tr>
+                            </table>
+                            <p><strong>Всегда звонкие</strong> (сонорные): [л], [м], [н], [р], [й']</p>
+                            <p><strong>Всегда глухие</strong>: [х], [ц], [ч'], [щ']</p>
+                            <div class="rule-note">⚠️ На конце слова звонкие оглушаются: дуб → [дуп], мороз → [марос].</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">4</span> Когда е, ё, ю, я дают 2 звука</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>Буквы <strong>е, ё, ю, я</strong> обозначают <strong>два звука</strong> в позициях:</p>
+                            <p>1. <strong>В начале слова</strong>: ель [й'эл'], яма [й'ама]</p>
+                            <p>2. <strong>После гласной</strong>: поёт [пай'от], моя [май'а]</p>
+                            <p>3. <strong>После ъ и ь</strong>: подъезд [падй'эзд], вьюга [в'й'уга]</p>
+
+                            <div class="rule-example">
+                                <strong>юла</strong> = [й'ула] — 3 буквы, 4 звука<br>
+                                <strong>люк</strong> = [л'ук] — 3 буквы, 3 звука<br>
+                                <strong>объём</strong> = [абй'ом] — 5 букв, 5 звуков
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="tab-quiz">
+            <div class="quiz-container">
+                <div class="quiz-progress">
+                    <div class="quiz-progress-bar">
+                        <div class="quiz-progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="quiz-progress-text" id="progressText">0 / 0</span>
+                </div>
+                <div class="quiz-card" id="quizCard"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz-engine.js"></script>
+    <script src="phonetics-quiz.js"></script>
+    <script>
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+            });
+        });
+        function toggleRule(header) {
+            const block = header.parentElement;
+            block.classList.toggle('open');
+            const body = block.querySelector('.rule-body');
+            if (block.classList.contains('open')) body.style.maxHeight = body.scrollHeight + 'px';
+            else body.style.maxHeight = '0';
+        }
+        document.querySelectorAll('.rule-block.open').forEach(block => {
+            block.querySelector('.rule-body').style.maxHeight = block.querySelector('.rule-body').scrollHeight + 'px';
+        });
+    </script>
+</body>
+</html>

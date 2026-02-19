@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Числительное и местоимение — РусЯзык</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">Р</div>
+                <div class="logo-text">Рус<span>Язык</span></div>
+            </a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-home">← К темам</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>🔢 Числительное и местоимение</h1>
+            <p>Склонение числительных, разряды местоимений</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="rules">📖 Правила</button>
+            <button class="tab-btn" data-tab="quiz">✍️ Тест</button>
+        </div>
+
+        <div class="tab-content active" id="tab-rules">
+            <div class="rules-container">
+                <div class="rule-block open">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">1</span> Разряды числительных</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <table class="rule-table">
+                                <tr><th>Разряд</th><th>Вопрос</th><th>Примеры</th></tr>
+                                <tr><td>Количественные</td><td>Сколько?</td><td>пять, двадцать три</td></tr>
+                                <tr><td>Порядковые</td><td>Который?</td><td>пятый, двадцать третий</td></tr>
+                                <tr><td>Собирательные</td><td>Сколько?</td><td>двое, трое, семеро</td></tr>
+                                <tr><td>Дробные</td><td>Сколько?</td><td>одна пятая, три четвёртых</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">2</span> Склонение числительных</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>При склонении <strong>сложных</strong> числительных изменяются <strong>обе части</strong>:</p>
+                            <table class="rule-table">
+                                <tr><th>Падеж</th><th>500</th><th>60</th></tr>
+                                <tr><td>И.п.</td><td>пятьсот</td><td>шестьдесят</td></tr>
+                                <tr><td>Р.п.</td><td>пятисот</td><td>шестидесяти</td></tr>
+                                <tr><td>Д.п.</td><td>пятистам</td><td>шестидесяти</td></tr>
+                                <tr><td>В.п.</td><td>пятьсот</td><td>шестьдесят</td></tr>
+                                <tr><td>Т.п.</td><td>пятьюстами</td><td>шестьюдесятью</td></tr>
+                                <tr><td>П.п.</td><td>о пятистах</td><td>о шестидесяти</td></tr>
+                            </table>
+
+                            <div class="rule-note">⚠️ В составных числительных склоняются ВСЕ слова: в тысяча девятьсот восемьдесят пятом (не: тысяча девятьсот восемьдесят пятом).</div>
+
+                            <div class="rule-example">
+                                <span class="correct">✓ с пятьюстами рублями</span><br>
+                                <span class="incorrect">✗ с пятистами рублями</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">3</span> Собирательные числительные</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>Собирательные числительные (двое, трое, четверо и т.д.) употребляются:</p>
+                            <p>✅ С существительными <strong>мужского рода</strong>: двое мальчиков</p>
+                            <p>✅ С существительными <strong>общего рода</strong>: трое сирот</p>
+                            <p>✅ С существительными, имеющими только <strong>мн. число</strong>: двое ножниц</p>
+                            <p>✅ Со словами <strong>дети, ребята, люди</strong>: семеро детей</p>
+
+                            <div class="rule-example">
+                                <span class="correct">✓ двое мальчиков</span><br>
+                                <span class="incorrect">✗ двое девочек</span> (правильно: две девочки)<br>
+                                <span class="correct">✓ трое суток</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">4</span> Разряды местоимений</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <table class="rule-table">
+                                <tr><th>Разряд</th><th>Примеры</th></tr>
+                                <tr><td>Личные</td><td>я, ты, он, она, оно, мы, вы, они</td></tr>
+                                <tr><td>Возвратное</td><td>себя</td></tr>
+                                <tr><td>Притяжательные</td><td>мой, твой, свой, наш, ваш, его, её, их</td></tr>
+                                <tr><td>Указательные</td><td>этот, тот, такой, таков, столько</td></tr>
+                                <tr><td>Вопросительные</td><td>кто, что, какой, чей, сколько</td></tr>
+                                <tr><td>Относительные</td><td>кто, что, какой, чей (в сложном предложении)</td></tr>
+                                <tr><td>Неопределённые</td><td>некто, нечто, кто-то, какой-либо</td></tr>
+                                <tr><td>Отрицательные</td><td>никто, ничто, некого, нечего</td></tr>
+                                <tr><td>Определительные</td><td>весь, всякий, каждый, сам, самый, иной</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">5</span> Ошибки в употреблении местоимений</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>Притяжательные <strong>его, её, их</strong> не изменяются:</p>
+                            <div class="rule-example">
+                                <span class="correct">✓ их дом</span><br>
+                                <span class="incorrect">✗ ихний дом</span><br>
+                                <span class="correct">✓ её книга</span><br>
+                                <span class="incorrect">✗ евоная / ейная книга</span>
+                            </div>
+                            <p>После предлогов к личным местоимениям 3-го лица добавляется <strong>н-</strong>:</p>
+                            <div class="rule-example">
+                                <span class="correct">✓ у него, к ней, с ними</span><br>
+                                <span class="incorrect">✗ у его, к ей, с ими</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="tab-quiz">
+            <div class="quiz-container">
+                <div class="quiz-progress">
+                    <div class="quiz-progress-bar">
+                        <div class="quiz-progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="quiz-progress-text" id="progressText">0 / 0</span>
+                </div>
+                <div class="quiz-card" id="quizCard"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz-engine.js"></script>
+    <script src="numeral-quiz.js"></script>
+    <script>
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+            });
+        });
+        function toggleRule(header) {
+            const block = header.parentElement;
+            block.classList.toggle('open');
+            const body = block.querySelector('.rule-body');
+            if (block.classList.contains('open')) body.style.maxHeight = body.scrollHeight + 'px';
+            else body.style.maxHeight = '0';
+        }
+        document.querySelectorAll('.rule-block.open').forEach(block => {
+            block.querySelector('.rule-body').style.maxHeight = block.querySelector('.rule-body').scrollHeight + 'px';
+        });
+    </script>
+</body>
+</html>

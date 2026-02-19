@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Имя существительное — РусЯзык</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">Р</div>
+                <div class="logo-text">Рус<span>Язык</span></div>
+            </a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-home">← К темам</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>📦 Имя существительное</h1>
+            <p>Морфологическая форма: склонение, род, число, падежи</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="rules">📖 Правила</button>
+            <button class="tab-btn" data-tab="quiz">✍️ Тест</button>
+        </div>
+
+        <!-- ПРАВИЛА -->
+        <div class="tab-content active" id="tab-rules">
+            <div class="rules-container">
+                <div class="rule-block open">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">1</span> Род имён существительных</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>В русском языке существительные имеют три рода: <strong>мужской</strong>, <strong>женский</strong> и <strong>средний</strong>. Также выделяют <strong>общий род</strong>.</p>
+
+                            <table class="rule-table">
+                                <tr><th>Род</th><th>Окончания</th><th>Примеры</th></tr>
+                                <tr><td>Мужской</td><td>нулевое, -й</td><td>стол, герой, конь</td></tr>
+                                <tr><td>Женский</td><td>-а, -я, -ь</td><td>книга, земля, ночь</td></tr>
+                                <tr><td>Средний</td><td>-о, -е, -мя</td><td>окно, море, время</td></tr>
+                                <tr><td>Общий</td><td>-а, -я</td><td>сирота, умница, плакса</td></tr>
+                            </table>
+
+                            <div class="rule-note">⚠️ Запомните: <strong>кофе</strong> — мужской род (допустимо средний в разговорной речи), <strong>тюль</strong> — мужской род, <strong>шампунь</strong> — мужской род.</div>
+
+                            <div class="rule-example">
+                                <span class="correct">✓ горячий кофе</span><br>
+                                <span class="incorrect">✗ горячее кофе</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">2</span> Склонение существительных</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>Существительные распределяются по <strong>трём склонениям</strong>:</p>
+
+                            <table class="rule-table">
+                                <tr><th>Склонение</th><th>Характеристика</th><th>Примеры</th></tr>
+                                <tr><td>1-е</td><td>М.р. и ж.р. с окончаниями -а, -я</td><td>мама, папа, земля</td></tr>
+                                <tr><td>2-е</td><td>М.р. с нулевым оконч., ср.р. -о, -е</td><td>стол, конь, окно</td></tr>
+                                <tr><td>3-е</td><td>Ж.р. с -ь на конце</td><td>ночь, мышь, рожь</td></tr>
+                            </table>
+
+                            <div class="rule-note">⚠️ Разносклоняемые: существительные на <strong>-мя</strong> (время, пламя, знамя и др.) и слово <strong>путь</strong>.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">3</span> Падежи и падежные окончания</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>В русском языке <strong>6 падежей</strong>:</p>
+
+                            <table class="rule-table">
+                                <tr><th>Падеж</th><th>Вопрос</th><th>Пример</th></tr>
+                                <tr><td>Именительный</td><td>Кто? Что?</td><td>книга</td></tr>
+                                <tr><td>Родительный</td><td>Кого? Чего?</td><td>книги</td></tr>
+                                <tr><td>Дательный</td><td>Кому? Чему?</td><td>книге</td></tr>
+                                <tr><td>Винительный</td><td>Кого? Что?</td><td>книгу</td></tr>
+                                <tr><td>Творительный</td><td>Кем? Чем?</td><td>книгой</td></tr>
+                                <tr><td>Предложный</td><td>О ком? О чём?</td><td>о книге</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">4</span> Множественное число: трудные формы</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>Образование форм множественного числа нередко вызывает затруднения:</p>
+
+                            <table class="rule-table">
+                                <tr><th>Правильно</th><th>Неправильно</th></tr>
+                                <tr><td>директор<strong>а́</strong></td><td>дире́кторы</td></tr>
+                                <tr><td>профессор<strong>а́</strong></td><td>профе́ссоры</td></tr>
+                                <tr><td>инженер<strong>ы</strong></td><td>инженера́</td></tr>
+                                <tr><td>договор<strong>ы</strong></td><td>договора́</td></tr>
+                                <tr><td>бухгалтер<strong>ы</strong></td><td>бухгалтера́</td></tr>
+                                <tr><td>шофёр<strong>ы</strong></td><td>шофера́</td></tr>
+                            </table>
+
+                            <div class="rule-example">
+                                <span class="correct">✓ Все директора собрались</span><br>
+                                <span class="correct">✓ Опытные инженеры</span><br>
+                                <span class="incorrect">✗ Все инженера пришли</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">5</span> Родительный падеж множественного числа</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>Одна из самых сложных тем — формы родительного падежа множественного числа:</p>
+
+                            <table class="rule-table">
+                                <tr><th>Группа</th><th>Правильно</th></tr>
+                                <tr><td>Овощи/фрукты</td><td>помидор<strong>ов</strong>, апельсин<strong>ов</strong>, но: яблок (нулевое)</td></tr>
+                                <tr><td>Национальности</td><td>грузин, армян, турок, но: монгол<strong>ов</strong>, якут<strong>ов</strong></td></tr>
+                                <tr><td>Парные предметы</td><td>носк<strong>ов</strong>, но: чулок, сапог, ботинок</td></tr>
+                                <tr><td>Единицы измерения</td><td>килограмм<strong>ов</strong>, гектар<strong>ов</strong>, но: ампер, ватт</td></tr>
+                            </table>
+
+                            <div class="rule-example">
+                                <span class="correct">✓ пара носков</span><br>
+                                <span class="incorrect">✗ пара носок</span><br>
+                                <span class="correct">✓ пара чулок</span><br>
+                                <span class="incorrect">✗ пара чулков</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ТЕСТ -->
+        <div class="tab-content" id="tab-quiz">
+            <div class="quiz-container">
+                <div class="quiz-progress">
+                    <div class="quiz-progress-bar">
+                        <div class="quiz-progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="quiz-progress-text" id="progressText">0 / 0</span>
+                </div>
+
+                <div class="quiz-card" id="quizCard">
+                    <!-- Quiz content inserted by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz-engine.js"></script>
+    <script src="noun-quiz.js"></script>
+    <script>
+        // Tabs
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+            });
+        });
+
+        // Rules accordion
+        function toggleRule(header) {
+            const block = header.parentElement;
+            block.classList.toggle('open');
+            const body = block.querySelector('.rule-body');
+            if (block.classList.contains('open')) {
+                body.style.maxHeight = body.scrollHeight + 'px';
+            } else {
+                body.style.maxHeight = '0';
+            }
+        }
+
+        // Init open rules
+        document.querySelectorAll('.rule-block.open').forEach(block => {
+            const body = block.querySelector('.rule-body');
+            body.style.maxHeight = body.scrollHeight + 'px';
+        });
+    </script>
+</body>
+</html>

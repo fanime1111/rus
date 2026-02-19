@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глагол и его формы — РусЯзык</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">Р</div>
+                <div class="logo-text">Рус<span>Язык</span></div>
+            </a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-home">← К темам</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>⚡ Глагол и его формы</h1>
+            <p>Спряжение, вид, время, причастие, деепричастие</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="rules">📖 Правила</button>
+            <button class="tab-btn" data-tab="quiz">✍️ Тест</button>
+        </div>
+
+        <div class="tab-content active" id="tab-rules">
+            <div class="rules-container">
+                <div class="rule-block open">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">1</span> Спряжение глаголов</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <table class="rule-table">
+                                <tr><th></th><th>I спряжение</th><th>II спряжение</th></tr>
+                                <tr><td>1 л. ед.ч.</td><td>-у (-ю)</td><td>-у (-ю)</td></tr>
+                                <tr><td>2 л. ед.ч.</td><td>-ешь</td><td>-ишь</td></tr>
+                                <tr><td>3 л. ед.ч.</td><td>-ет</td><td>-ит</td></tr>
+                                <tr><td>1 л. мн.ч.</td><td>-ем</td><td>-им</td></tr>
+                                <tr><td>2 л. мн.ч.</td><td>-ете</td><td>-ите</td></tr>
+                                <tr><td>3 л. мн.ч.</td><td>-ут (-ют)</td><td>-ат (-ят)</td></tr>
+                            </table>
+                            <p><strong>Ко II спряжению</strong> относятся:</p>
+                            <p>• Все глаголы на <strong>-ить</strong> (кроме брить, стелить)</p>
+                            <p>• 7 глаголов на -еть: терпеть, вертеть, обидеть, зависеть, ненавидеть, видеть, смотреть</p>
+                            <p>• 4 глагола на -ать: гнать, держать, слышать, дышать</p>
+                            <div class="rule-note">⚠️ Исключения: брить, стелить → I спряжение.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">2</span> Вид глагола</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <table class="rule-table">
+                                <tr><th>Вид</th><th>Вопрос</th><th>Примеры</th></tr>
+                                <tr><td>Совершенный</td><td>Что сделать?</td><td>написать, прочитать</td></tr>
+                                <tr><td>Несовершенный</td><td>Что делать?</td><td>писать, читать</td></tr>
+                            </table>
+                            <div class="rule-example">
+                                <span class="correct">Совершенный: Я написал письмо (действие завершено)</span><br>
+                                <span class="correct">Несовершенный: Я писал письмо (процесс)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">3</span> Трудные формы глаголов</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>Некоторые глаголы имеют нестандартные формы:</p>
+                            <div class="rule-example">
+                                <span class="correct">✓ класть (несов.в.)</span> / <span class="correct">положить (сов.в.)</span><br>
+                                <span class="incorrect">✗ ложить</span> / <span class="incorrect">✗ покласть</span><br><br>
+                                <span class="correct">✓ надеть (что? на себя)</span><br>
+                                <span class="correct">✓ одеть (кого? ребёнка)</span><br><br>
+                                <span class="correct">✓ их нет — побеждаю, убеждаю (но не: побежду, убежду)</span>
+                            </div>
+                            <table class="rule-table">
+                                <tr><th>Правильно</th><th>Неправильно</th></tr>
+                                <tr><td>поезжай</td><td>ехай, едь, езжай</td></tr>
+                                <tr><td>ляг / лягте</td><td>ляж / ляжте</td></tr>
+                                <tr><td>положи</td><td>ложи, поклади</td></tr>
+                                <tr><td>жжёт</td><td>жгёт</td></tr>
+                                <tr><td>печёт</td><td>пекёт</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">4</span> Причастие и деепричастие</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p><strong>Причастие</strong> — форма глагола, обладающая свойствами прилагательного:</p>
+                            <table class="rule-table">
+                                <tr><th>Тип</th><th>Суффиксы</th><th>Пример</th></tr>
+                                <tr><td>Действ. наст. вр.</td><td>-ущ-/-ющ-, -ащ-/-ящ-</td><td>читающий, дышащий</td></tr>
+                                <tr><td>Действ. прош. вр.</td><td>-вш-, -ш-</td><td>читавший, нёсший</td></tr>
+                                <tr><td>Страд. наст. вр.</td><td>-ем-/-им-</td><td>читаемый, любимый</td></tr>
+                                <tr><td>Страд. прош. вр.</td><td>-нн-, -енн-, -т-</td><td>написанный, открытый</td></tr>
+                            </table>
+                            <p><strong>Деепричастие</strong> — форма глагола, обладающая свойствами наречия:</p>
+                            <div class="rule-example">
+                                Несов.в.: <strong>читая</strong>, <strong>гуляя</strong> (суффиксы -а/-я)<br>
+                                Сов.в.: <strong>прочитав</strong>, <strong>написав</strong> (суффиксы -в, -вши, -ши)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="tab-quiz">
+            <div class="quiz-container">
+                <div class="quiz-progress">
+                    <div class="quiz-progress-bar">
+                        <div class="quiz-progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="quiz-progress-text" id="progressText">0 / 0</span>
+                </div>
+                <div class="quiz-card" id="quizCard"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz-engine.js"></script>
+    <script src="verb-quiz.js"></script>
+    <script>
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+            });
+        });
+        function toggleRule(header) {
+            const block = header.parentElement;
+            block.classList.toggle('open');
+            const body = block.querySelector('.rule-body');
+            if (block.classList.contains('open')) body.style.maxHeight = body.scrollHeight + 'px';
+            else body.style.maxHeight = '0';
+        }
+        document.querySelectorAll('.rule-block.open').forEach(block => {
+            block.querySelector('.rule-body').style.maxHeight = block.querySelector('.rule-body').scrollHeight + 'px';
+        });
+    </script>
+</body>
+</html>

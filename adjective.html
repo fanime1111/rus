@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Имя прилагательное — РусЯзык</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">Р</div>
+                <div class="logo-text">Рус<span>Язык</span></div>
+            </a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-home">← К темам</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>🎨 Имя прилагательное</h1>
+            <p>Морфологическая форма: разряды, степени сравнения, краткая и полная формы</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="rules">📖 Правила</button>
+            <button class="tab-btn" data-tab="quiz">✍️ Тест</button>
+        </div>
+
+        <div class="tab-content active" id="tab-rules">
+            <div class="rules-container">
+                <div class="rule-block open">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">1</span> Разряды прилагательных</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>Прилагательные делятся на три разряда:</p>
+                            <table class="rule-table">
+                                <tr><th>Разряд</th><th>Признак</th><th>Примеры</th></tr>
+                                <tr><td>Качественные</td><td>Признак может быть в большей/меньшей степени</td><td>красивый, умный, высокий</td></tr>
+                                <tr><td>Относительные</td><td>Признак через отношение к предмету/материалу</td><td>деревянный, зимний, городской</td></tr>
+                                <tr><td>Притяжательные</td><td>Принадлежность кому-либо</td><td>мамин, лисий, отцов</td></tr>
+                            </table>
+                            <div class="rule-note">⚠️ Только качественные прилагательные имеют степени сравнения и краткую форму.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">2</span> Степени сравнения</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>Качественные прилагательные образуют <strong>сравнительную</strong> и <strong>превосходную</strong> степени:</p>
+                            <table class="rule-table">
+                                <tr><th>Степень</th><th>Простая форма</th><th>Составная форма</th></tr>
+                                <tr><td>Сравнительная</td><td>красивее, выше, тоньше</td><td>более красивый, менее высокий</td></tr>
+                                <tr><td>Превосходная</td><td>красивейший, высочайший</td><td>самый красивый, наиболее высокий</td></tr>
+                            </table>
+                            <div class="rule-example">
+                                <span class="correct">✓ более красивый</span><br>
+                                <span class="incorrect">✗ более красивее</span><br>
+                                <span class="correct">✓ самый умный</span><br>
+                                <span class="incorrect">✗ самый умнейший</span>
+                            </div>
+                            <div class="rule-note">⚠️ Нельзя смешивать простую и составную формы: «более лучше», «самый наилучший» — ошибки!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">3</span> Краткая и полная формы</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>Качественные прилагательные имеют <strong>полную</strong> (какой?) и <strong>краткую</strong> (каков?) формы:</p>
+                            <div class="rule-example">
+                                Полная: <strong>красивый</strong> дом<br>
+                                Краткая: дом <strong>красив</strong>
+                            </div>
+                            <p>Краткая форма изменяется по <strong>числам</strong> и <strong>родам</strong>, но не по падежам.</p>
+                            <table class="rule-table">
+                                <tr><th></th><th>М.р.</th><th>Ж.р.</th><th>Ср.р.</th><th>Мн.ч.</th></tr>
+                                <tr><td>красивый</td><td>красив</td><td>красива</td><td>красиво</td><td>красивы</td></tr>
+                                <tr><td>умный</td><td>умён</td><td>умна</td><td>умно</td><td>умны</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">4</span> Ошибки в формах прилагательных</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>Частые ошибки при образовании форм:</p>
+                            <div class="rule-example">
+                                <span class="correct">✓ Эта задача более сложная</span><br>
+                                <span class="incorrect">✗ Эта задача более сложнее</span><br><br>
+                                <span class="correct">✓ Он самый талантливый</span><br>
+                                <span class="incorrect">✗ Он самый талантливейший</span><br><br>
+                                <span class="correct">✓ Он красивее всех</span><br>
+                                <span class="incorrect">✗ Он красивше всех</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="tab-quiz">
+            <div class="quiz-container">
+                <div class="quiz-progress">
+                    <div class="quiz-progress-bar">
+                        <div class="quiz-progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="quiz-progress-text" id="progressText">0 / 0</span>
+                </div>
+                <div class="quiz-card" id="quizCard"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz-engine.js"></script>
+    <script src="adjective-quiz.js"></script>
+    <script>
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+            });
+        });
+
+        function toggleRule(header) {
+            const block = header.parentElement;
+            block.classList.toggle('open');
+            const body = block.querySelector('.rule-body');
+            if (block.classList.contains('open')) {
+                body.style.maxHeight = body.scrollHeight + 'px';
+            } else {
+                body.style.maxHeight = '0';
+            }
+        }
+
+        document.querySelectorAll('.rule-block.open').forEach(block => {
+            const body = block.querySelector('.rule-body');
+            body.style.maxHeight = body.scrollHeight + 'px';
+        });
+    </script>
+</body>
+</html>

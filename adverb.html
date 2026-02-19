@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наречие — РусЯзык</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">Р</div>
+                <div class="logo-text">Рус<span>Язык</span></div>
+            </a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-home">← К темам</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>🏃 Наречие</h1>
+            <p>Морфологическая норма, разряды, правописание</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="rules">📖 Правила</button>
+            <button class="tab-btn" data-tab="quiz">✍️ Тест</button>
+        </div>
+
+        <div class="tab-content active" id="tab-rules">
+            <div class="rules-container">
+                <div class="rule-block open">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">1</span> Что такое наречие</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p><strong>Наречие</strong> — самостоятельная часть речи, обозначающая признак действия, предмета или другого признака. <strong>Не изменяется</strong>.</p>
+                            <p>Отвечает на вопросы: <strong>как? где? когда? куда? откуда? зачем? почему? в какой степени?</strong></p>
+                            <div class="rule-example">
+                                Бежать <strong>быстро</strong> (как?)<br>
+                                Приехать <strong>вчера</strong> (когда?)<br>
+                                <strong>Очень</strong> красивый (в какой степени?)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">2</span> Разряды наречий</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <table class="rule-table">
+                                <tr><th>Разряд</th><th>Вопрос</th><th>Примеры</th></tr>
+                                <tr><td>Образа действия</td><td>Как?</td><td>быстро, красиво, тихо</td></tr>
+                                <tr><td>Меры и степени</td><td>В какой степени?</td><td>очень, слишком, чуть-чуть</td></tr>
+                                <tr><td>Места</td><td>Где? Куда? Откуда?</td><td>здесь, туда, далеко</td></tr>
+                                <tr><td>Времени</td><td>Когда?</td><td>сегодня, вчера, давно</td></tr>
+                                <tr><td>Причины</td><td>Почему?</td><td>сгоряча, поневоле</td></tr>
+                                <tr><td>Цели</td><td>Зачем?</td><td>назло, нарочно</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">3</span> Степени сравнения наречий</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p>Наречия на <strong>-о / -е</strong>, образованные от качественных прилагательных, имеют степени сравнения:</p>
+                            <table class="rule-table">
+                                <tr><th>Степень</th><th>Простая</th><th>Составная</th></tr>
+                                <tr><td>Сравнительная</td><td>быстрее, выше</td><td>более быстро</td></tr>
+                                <tr><td>Превосходная</td><td>—</td><td>быстрее всех / всего</td></tr>
+                            </table>
+                            <div class="rule-example">
+                                <span class="correct">✓ бежать быстрее</span><br>
+                                <span class="correct">✓ более аккуратно</span><br>
+                                <span class="incorrect">✗ более быстрее</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h3><span class="rule-num">4</span> Правописание наречий</h3>
+                        <span class="rule-toggle">▼</span>
+                    </div>
+                    <div class="rule-body">
+                        <div class="rule-body-inner">
+                            <p><strong>Дефис</strong> в наречиях пишется:</p>
+                            <p>• С приставкой <strong>по-</strong> и суффиксами -ому/-ему/-ски/-цки/-ьи: по-русски, по-новому</p>
+                            <p>• С приставкой <strong>во-/в-</strong> и суффиксами -ых/-их: во-первых, в-третьих</p>
+                            <p>• При повторении: еле-еле, чуть-чуть</p>
+                            <p>• С суффиксами -то, -либо, -нибудь, с приставкой кое-: где-то, когда-нибудь</p>
+
+                            <p><strong>-О и -А</strong> на конце наречий:</p>
+                            <div class="rule-example">
+                                С приставками <strong>в-, на-, за-</strong> → <strong>-о</strong>: направо, заново, влево<br>
+                                С приставками <strong>из-, до-, с-</strong> → <strong>-а</strong>: издалека, досуха, справа
+                            </div>
+                            <div class="rule-note">⚠️ Мнемоника: из окна (из-..а), в окно (в-..о), на окно (на-..о).</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="tab-quiz">
+            <div class="quiz-container">
+                <div class="quiz-progress">
+                    <div class="quiz-progress-bar">
+                        <div class="quiz-progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="quiz-progress-text" id="progressText">0 / 0</span>
+                </div>
+                <div class="quiz-card" id="quizCard"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz-engine.js"></script>
+    <script src="adverb-quiz.js"></script>
+    <script>
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+            });
+        });
+        function toggleRule(header) {
+            const block = header.parentElement;
+            block.classList.toggle('open');
+            const body = block.querySelector('.rule-body');
+            if (block.classList.contains('open')) body.style.maxHeight = body.scrollHeight + 'px';
+            else body.style.maxHeight = '0';
+        }
+        document.querySelectorAll('.rule-block.open').forEach(block => {
+            block.querySelector('.rule-body').style.maxHeight = block.querySelector('.rule-body').scrollHeight + 'px';
+        });
+    </script>
+</body>
+</html>
